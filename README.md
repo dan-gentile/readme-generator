@@ -1,8 +1,8 @@
 ## (insert title here)
 
-![Contents](https://img.shields.io/github/languages/top/dan-gentile/weather-dashboard)
-![Last-Commit](https://img.shields.io/github/last-commit/dan-gentile/weather-dashboard)
-![License](https://img.shields.io/github/license/dan-gentile/gym-bro)
+![Contents](https://img.shields.io/github/languages/top/dan-gentile/readme-generator)
+![Last-Commit](https://img.shields.io/github/last-commit/dan-gentile/readme-generator)
+![License](https://img.shields.io/github/license/dan-gentile/readme-generator)
 
 ### Description 
 
