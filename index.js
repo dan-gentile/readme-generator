@@ -1,25 +1,74 @@
-// require all the dependents i need - inquirer, fs
-// create an array of questions 
-// write a README file in a markdown file as a template 
-// function that will generate my readme template
+// required packages 
+const fs = require('fs');
+const util = require("util");
+const inquirer = require('inquirer');
+const genMarkdown = require('./generateMarkdown');
 
-// use inquirer to prompt users with questions 
-
-// uses answers that come back from inquirer - pass those into my generate readme function 
-// write file using template generate from readme function
+// promisify write file
+const writeFileAsync = util.promisify(fs.writeFile);
 
 // array of questions for user
-const questions = [
 
-];
+const questions = [{
+        type: "input",
+        message: "What is your GitHub username?",
+        name: "username"
+    },
+    {
+        type: "input",
+        message: "What is your Email?",
+        name: "email"
+    },
+    {
+        type: "input",
+        message: "What is the title of your project?",
+        name: "project"
+    },
+    {
+        type: "input",
+        message: "Please add a description of the project?",
+        name: "description"
+    },
+    {
+        type: "input",
+        message: "How do you install your project?",
+        name: "install"
+    },
+    {
+        type: "input",
+        message: "How do you use your project?",
+        name: "usage"
+    },
+    {
+        type: "input",
+        message: "What is the license of your project?",
+        name: "license"
+    },
+    {
+        type: "input",
+        message: "What are you contribution guidelines?",
+        name: "contribution"
+    },
+    {
+        type: "input",
+        message: "Please explain any testing",
+        name: "test"
+    },
 
-// function to write README file
-function writeToFile(fileName, data) {}
+]
 
-// function to initialize program
-function init() {
+// async function to run the application 
 
-}
+async function init() {
+    try {
+        const data = await inquirer.prompt(questions);
+        const markDown = genMarkdown(data);
+        await writeFileAsync("readTest.md", markDown);
 
-// function call to initialize program
+    } catch (err) {
+        throw (err);
+    }
+};
+
+// function call to run program
 init();
