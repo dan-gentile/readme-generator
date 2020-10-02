@@ -27,25 +27,33 @@ ${data.description}
 -[${data.technology}](#${data.technologyURL})
     
 ### Installation 
-${data.installation}
+${data.install}
 
 ### Usage
 ${data.usage}
     
 ### License 
-${data.license}
-    
+Copyright (c) ${data.name}. All rights reserved
+Licensed under the [${data.license}](https://github.com/${data.username}/${data.project}/blob/master/LICENSE) license.
+
 ### Contributing 
-${data.contributing}
+1. Clone repo and create a new branch: ~~~$ git checkout https://github.com/${data.username}/${data.project} -b name_for_new_branch.~~~
+2. Make changes and test
+3. Submit Pull Request with comprehensive description of changes
     
 ### Tests 
 ${data.test}
 
 ### Questions 
-${data.questions}
+
+If you have any questions and would like to get in touch please email me! 
+email: ${data.email}
+
+
     
 
 `;
 }
 
+// exporting the function
 module.exports = generateMarkdown;
