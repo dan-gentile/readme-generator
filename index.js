@@ -14,7 +14,7 @@ async function init() {
     try {
         const data = await inquirer.prompt(questions);
         const markDown = genMarkdown(data);
-        await writeFileAsync("README.md", markDown);
+        await writeFileAsync("yourREADME.md", markDown);
 
     } catch (err) {
         throw (err);
