@@ -6,6 +6,9 @@
 
 ## Description 
 
+![readme-gen](https://user-images.githubusercontent.com/68626350/94948032-80a60680-0493-11eb-8ca9-021f2f786092.gif)
+
+
 This application is designed to generate a readme file based on user inputs. It is intended to help developers create a base layout explaining their project in seconds. You will be lead through a series of prompts to populate the page and then a file with all of your data will be created. 
 
 ## Table of Contents
