@@ -41,8 +41,6 @@ ${data.test}
 
 If you have any questions and would like to get in touch please email me! 
 email: ${data.email}
-
-
 `;
 }
 
