@@ -19,6 +19,7 @@ This application is designed to generate a readme file based on user inputs. It 
 - [Table of Contents](#table-of-contents)
 - [Installation](#installation)
 - [Usage](#usage)
+- [Code Snippets](#code-snippets)
 - [License](#license)
 - [Contributing](#contributing)
 - [Tests](#tests)
@@ -51,6 +52,22 @@ Open `index.js` file in the terminal.
 Input `node index.js` to begin. 
 
 Follow prompts to generate your form. 
+
+## Code Snippets
+
+Function running the whole app
+~~~
+async function init() {
+    try {
+        const data = await inquirer.prompt(questions);
+        const markDown = genMarkdown(data);
+        await writeFileAsync("yourREADME.md", markDown);
+
+    } catch (err) {
+        throw (err);
+    }
+};
+~~~
 
 
 ## License 
