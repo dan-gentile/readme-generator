@@ -8,17 +8,13 @@ const { questions } = require('./questions');
 // promisify write file
 const writeFileAsync = util.promisify(fs.writeFile);
 
-// array of questions for user
-
-
-
 // async function to run the application 
 
 async function init() {
     try {
         const data = await inquirer.prompt(questions);
         const markDown = genMarkdown(data);
-        await writeFileAsync("readTest.md", markDown);
+        await writeFileAsync("README.md", markDown);
 
     } catch (err) {
         throw (err);

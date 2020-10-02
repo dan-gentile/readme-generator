@@ -6,14 +6,13 @@ function generateMarkdown(data) {
 ![Last-Commit](https://img.shields.io/github/last-commit/${data.username}/${data.project})
 ![License](https://img.shields.io/github/license/${data.username}/${data.project})
     
-### Description 
+## Description 
 ${data.description}
     
-### Table of Contents
+## Table of Contents
     
 - [Title](#title)
 - [Description](#description)
-- [Technologies](#technologies)
 - [Table of Contents](#table-of-contents)
 - [Installation](#installation)
 - [Usage](#usage)
@@ -22,35 +21,27 @@ ${data.description}
 - [Tests](#tests)
 - [Questions](#questions)
     
-### Technologies 
-
--[${data.technology}](#${data.technologyURL})
-    
-### Installation 
+## Installation 
 ${data.install}
 
-### Usage
+## Usage
 ${data.usage}
     
-### License 
+## License 
 Copyright (c) ${data.name}. All rights reserved
 Licensed under the [${data.license}](https://github.com/${data.username}/${data.project}/blob/master/LICENSE) license.
 
-### Contributing 
-1. Clone repo and create a new branch: ~~~$ git checkout https://github.com/${data.username}/${data.project} -b name_for_new_branch.~~~
-2. Make changes and test
-3. Submit Pull Request with comprehensive description of changes
-    
-### Tests 
+## Contributing 
+${data.contributing}
+
+## Tests 
 ${data.test}
 
-### Questions 
+## Questions 
 
 If you have any questions and would like to get in touch please email me! 
 email: ${data.email}
 
-
-    
 
 `;
 }
