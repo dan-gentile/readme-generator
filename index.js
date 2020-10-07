@@ -2,8 +2,8 @@
 const fs = require('fs');
 const util = require("util");
 const inquirer = require('inquirer');
-const genMarkdown = require('./generateMarkdown');
-const { questions } = require('./questions');
+const genMarkdown = require('./dist/JS/generateMarkdown');
+const { questions } = require('./dist/JS/questions');
 
 // promisify write file
 const writeFileAsync = util.promisify(fs.writeFile);
